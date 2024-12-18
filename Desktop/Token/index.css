@@ -1,0 +1,474 @@
+/* General Reset for body and html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and HTML setup */
+html, body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+  background-color: #f8f8f8; /* Light off-white background */
+  color: #333; /* Dark text for contrast */
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center; /* Center the nav items */
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+/* Logo Styling */
+.logo img {
+  width: 100px; /* Set logo width */
+  height: 100px; /* Set logo height to make it round */
+  border-radius: 50%; /* Make the logo round */
+  object-fit: cover; /* Ensures the image fits the circle without distortion */
+  margin-right: 10px;
+}
+
+/* Navigation Styling */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+}
+
+nav ul li {
+  font-size: 1.2em;
+}
+
+nav ul li a {
+  color: #333; /* Dark text for contrast */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effects for Navigation Links */
+nav ul li a:hover {
+  color: #007bff; /* Change to blue on hover */
+  transform: translateY(-3px);
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  header {
+      padding: 15px 20px;
+      flex-direction: column;
+  }
+
+  .logo img {
+      width: 80px; /* Smaller logo on mobile */
+      height: 80px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 15px;
+  }
+
+  nav ul li a {
+      font-size: 1.1em;
+  }
+}
+
+#hero, #about, #features, #roadmap {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  margin: 20px;
+}
+
+#hero {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 2.5em;
+}
+
+#hero .cta-btn {
+  background-color: #ff6600;
+  color: white;
+  padding: 15px 30px;
+  padding-top: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+section {
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+#about, #features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#about {
+  flex: 1 1 45%;
+}
+
+#features {
+  flex: 1 1 45%;
+}
+/* Roadmap Section Styling */
+#roadmap {
+  background-color: #f4f4f4; /* Light background for the section */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#roadmap h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+#roadmap ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+  gap: 20px;
+}
+
+#roadmap ul li {
+  background-color: #ffffff; /* White background for each roadmap item */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#roadmap ul li:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+#roadmap ul li strong {
+  font-size: 1.3em;
+  color: #007bff; /* Blue color for the quarter labels */
+  display: block;
+  margin-bottom: 10px;
+}
+
+#roadmap ul li p {
+  font-size: 1.1em;
+  color: #555; /* Dark gray text for the descriptions */
+  line-height: 1.6;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  #roadmap ul {
+      grid-template-columns: 1fr; /* Stack items vertically on small screens */
+  }
+
+  #roadmap h2 {
+      font-size: 2em; /* Slightly smaller heading on mobile */
+  }
+
+  #roadmap ul li {
+      padding: 15px;
+  }
+}
+
+#features {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+#features h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.feature-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 3em;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.feature-item h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.feature-item p {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .features-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .feature-item {
+      width: 80%;
+      margin-bottom: 20px;
+  }
+}
+#about {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-text {
+  width: 50%;
+}
+
+.about-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-text p {
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-image {
+  width: 40%;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .about-text {
+      width: 80%;
+      text-align: center;
+  }
+
+  .about-image {
+      width: 80%;
+      margin-top: 20px;
+  }
+}
+#hero {
+  position: relative;
+  background: url('./background.png') no-repeat center center/cover;
+  height: 100vh;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+  z-index: 1;
+}
+
+#hero h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+}
+
+#hero p {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+  color: black;
+  line-height: 1.6;
+}
+
+.cta-btn {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.2em;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+      font-size: 2.5em;
+  }
+
+  #hero p {
+      font-size: 1.1em;
+  }
+
+  .cta-btn {
+      font-size: 1.1em;
+      padding: 12px 25px;
+  }
+}
+/* Contact Section Styling */
+#contact {
+  background-color: #f8f8f8; /* Light background color */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+#contact p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  background-color: #ffffff; /* White background for each contact item */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.contact-item h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-item a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  #contact {
+      padding: 30px 15px;
+  }
+
+  .contact-item {
+      padding: 15px;
+  }
+
+  #contact h2 {
+      font-size: 2em; /* Slightly smaller heading on mobile */
+  }
+
+  .contact-item h3 {
+      font-size: 1.5em; /* Adjusted subheading size */
+  }
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
